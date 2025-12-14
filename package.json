@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engine":"22.x", 
   "scripts": {
-    "build": "babel src -d build",
     "start": "node ./src/index.js"
   },
   "author": "",
