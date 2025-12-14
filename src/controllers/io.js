@@ -232,6 +232,7 @@ export const getAllPage = async (req, res) => {
 }
 
 export const getAPage = async (req, res) => {
+  console.log("Request Sent Get A page")
   const condition = {
     name: req.body.name,
   }
