@@ -45,7 +45,7 @@ Pioneer Adventures is a full-stack MERN project built for a travel company speci
 ---
 
 ## Learnings
-
+My overall expreience and learnings thorugh this project:   
 - First experience managing a large project structure, improving project organization and maintainability.
 
 - Advanced CSS, React, and Node.js skills through building interactive and dynamic features.
