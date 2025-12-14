@@ -2,6 +2,9 @@
 # Node modules
 node_modules/
 
+#old public file
+src/public_old
+
 # Environment variables
 .env
 
