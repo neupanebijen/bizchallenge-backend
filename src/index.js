@@ -16,19 +16,15 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use("/uploads", express.static("uploads"))
-app.use("/", express.static("public"))
+app.use(express.static(path.join(__dirname, "public")))
 
 const PORT = process.env.PORT
 const DB_URI = process.env.DB_URI
 
 app.use("/mainRoute", mainRouter)
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname + "/public/index.html"))
-// })
-
 app.get("*", (req, res) => {
-  res.sendFile("/public/index.html")
+  res.sendFile(path.join(__dirname, "public", "index.html"))
 })
 
 mongoose
