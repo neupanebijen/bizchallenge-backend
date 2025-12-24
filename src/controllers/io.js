@@ -101,6 +101,23 @@ export const getPackage = async (req, res) => {
   }
 }
 
+export const getATeamMember = async (req, res) => {
+  const { memberId } = req.body
+
+  const condition = {
+    _id: memberId,
+  }
+
+  try {
+    const result = await Team.findOne(condition)
+
+    res.json({ success: true, result: result })
+  } catch (e) {
+    console.log(e.toString())
+    res.json({ success: false, error: e.toString() })
+  }
+}
+
 export const editPackage = async (req, res) => {
   const { packageData } = req.body
 

@@ -35,6 +35,7 @@ import {
   getEvent,
   getContacts,
   getUsefulInformation,
+  getATeamMember,
 } from "../controllers/io.js"
 
 const router = express.Router()
@@ -43,6 +44,7 @@ router.get("/testRouter", (req, res) => {
   res.json({ sucess: "true" })
 })
 
+router.post("/getATeamMember", getATeamMember)
 router.post("/createPackage", createPackage)
 router.post("/getAllPackage", getAllPackage)
 router.post("/getPackage", getPackage)
